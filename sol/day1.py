@@ -1,6 +1,6 @@
 def read_input():
     data = []
-    with open("day1.txt") as f:
+    with open("../data/day1.txt") as f:
         cur_list = []
         for line in f:
             if line == "\n":
