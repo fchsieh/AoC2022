@@ -1,5 +1,5 @@
 def read_data():
-    with open("../data/day8.txt") as f:
+    with open("../data/8.txt") as f:
         return f.read().splitlines()
 
 

@@ -15,7 +15,7 @@ import copy
 
 
 def read_input():
-    with open("../data/day5.txt") as f:
+    with open("../data/5.txt") as f:
         data = []
         for line in f.readlines():
             cur_line = line.strip().split(" ")

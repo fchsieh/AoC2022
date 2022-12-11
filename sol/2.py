@@ -1,5 +1,5 @@
 def read_input():
-    with open("../data/day2.txt") as f:
+    with open("../data/2.txt") as f:
         raw_data = f.read().splitlines()
         parsed = [x.split() for x in raw_data]  # split on whitespace
     return parsed

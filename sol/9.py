@@ -1,8 +1,5 @@
-import matplotlib.pyplot as plt
-
-
 def read_data():
-    with open("../data/day9.txt", "r") as f:
+    with open("../data/9.txt", "r") as f:
         data = f.read().splitlines()
     return data
 
