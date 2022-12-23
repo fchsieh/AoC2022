@@ -1,6 +1,3 @@
-from functools import lru_cache
-
-
 class Grid:
     def __init__(self, width):
         self.width = width
