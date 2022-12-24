@@ -58,6 +58,8 @@ def write_default_code(day):
         f.write('if __name__ == "__main__":\n')
         f.write("\tos.chdir(os.path.dirname(os.path.abspath(__file__)))\n")
         f.write('\ttest, input = read_data("test.txt"), read_data("input.txt")\n')
+        f.write("\tTest(test, solve, -1, -1)\n")
+        f.write("\tsolve(input)\n")
 
 
 def main(args):
