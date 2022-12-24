@@ -6,7 +6,7 @@ import subprocess
 try:
     from aocd.models import Puzzle
 except ImportError:
-    print("Please install aocd: pip install aocd")
+    print("Please install aocd: pip install advent-of-code-data")
     sys.exit(1)
 
 
@@ -53,13 +53,13 @@ def write_default_code(day):
         f.write("# Path: day-{}/{}.py\n".format(day, day))
         f.write("# Solution for day {} of Advent of Code\n".format(day))
         f.write("import os\n\nfrom aoc_tools import Test\n\n\n")
-        f.write("def read_data(file):\n\tpass\n\n\n")
-        f.write("def solve(data):\n\tpass\n\n\n")
+        f.write("def read_data(file):\n    pass\n\n\n")
+        f.write("def solve(data):\n    pass\n\n\n")
         f.write('if __name__ == "__main__":\n')
-        f.write("\tos.chdir(os.path.dirname(os.path.abspath(__file__)))\n")
-        f.write('\ttest, input = read_data("test.txt"), read_data("input.txt")\n')
-        f.write("\tTest(test, solve, -1, -1)\n")
-        f.write("\tsolve(input)\n")
+        f.write("    os.chdir(os.path.dirname(os.path.abspath(__file__)))\n")
+        f.write('    test, input = read_data("test.txt"), read_data("input.txt")\n')
+        f.write("    # Test(test, solve, -1, -1)\n")
+        f.write("    solve(test)\n")
 
 
 def main(args):
